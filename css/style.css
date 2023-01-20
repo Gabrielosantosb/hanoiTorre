@@ -1,0 +1,170 @@
+body{
+    background: #130738;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    margin-left: 16px;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: rgb(228, 228, 231);
+}
+
+
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.titulo{
+    font-size: 40px;
+    color: rgb(253, 253, 253);
+    background: hsl(240, 38%, 25%);
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px solid black ;
+}
+
+.movimentos-conteiner{
+    display: flex;
+    justify-content: center;
+  
+}
+.movimentos{
+    color: white;
+    padding-inline: 40px;
+    margin-top: 1rem;
+
+}
+
+
+
+/*Parte principal*/
+
+.torre-conteiner {
+    width: 900px;
+    height: 500px;
+    margin: 0 auto ;
+    display: flex;
+    border-radius: 10px;
+    border: 4px solid black ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    background-color: #636e47;
+    border-radius: 8px;
+}
+
+.torre {
+    height: 200px;
+    width: 10px;
+    border-radius: 20px 0 10px;
+    margin: 50px 30px 0 30px;
+    background-color: black;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    cursor: pointer;
+}
+
+.torre:hover{
+    background-color: gray;
+}
+
+.disco{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.d1 {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 60px;
+    height: 25px;
+    background-color: red;
+}
+
+.d2 {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 90px;
+    height: 25px;
+    background-color: blue;
+}
+  
+.d3 {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 120px;
+    height: 25px;
+    background-color: yellow;
+    
+}
+
+.d4{    
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 150px;
+    height: 25px;
+    background-color: green;    
+}
+.botarResetar-conteiner{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+
+}
+#botaoResetar{
+    font-size: 40px;
+    color: rgb(253, 253, 253);
+    background: 4b4baf;
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px solid black ;
+    cursor:pointer;
+    background: rgb(40, 53, 78);
+}
+#botaoResetar:hover{
+    background: #ebeb61;
+    color: black;
+    transition: 0.4s;
+}
+
+.fimJogo{   
+    display: none;
+    background: white;
+    position: absolute;
+    width: 550px;
+    height: 250px;
+    border-radius: 10px;
+    border: 4px solid black ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    opacity: 0.7;
+}
+.textofimJogo{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width:768px) {
+
+
+    .torre-conteiner{
+        width: 250px;
+        height: 800px;
+        gap: 0;
+        flex-direction: column;
+
+    }
+    .torre{
+        height: 180px;
+    }
+}
